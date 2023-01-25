@@ -1,0 +1,11 @@
+.mod-readingbar .progress {
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+  width: 100%;
+  height: 4px;
+}
+
+.mod-readingbar .progress-bar {
+  height: 4px;
+}
