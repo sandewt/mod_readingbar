@@ -8,9 +8,11 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 # Installation
 
-Download: https://github.com/sandewt/mod_readingbar/releases
+- Download: https://github.com/sandewt/mod_readingbar/releases
 
-Install and activate the module in the topbar postion.
+- Install and activate the module in the topbar postion.
+
+- Choose the desired bootstrap color theme for the progress bar
 
 # License
 
