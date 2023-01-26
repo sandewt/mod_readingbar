@@ -14,4 +14,4 @@ Install and activate the module in the topbar postion.
 
 Copyright (c) 2023 JG Sanders
 
-GNU General Public License version 2 or later (https://www.gnu.org/licenses/gpl-3.0.txt)
+GNU General Public License version 2 or later ([https://www.gnu.org/licenses/gpl-3.0.txt](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html))
