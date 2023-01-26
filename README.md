@@ -6,13 +6,16 @@ Based on an article in Joomla! Community Magazine™: How to create a reading ba
 
 Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-bar-in-your-joomla-website-without-extensions
 
-# Installation
-
+# Configuration
 - Download: https://github.com/sandewt/mod_readingbar/releases
 
 - Install and activate the module in the topbar postion.
 
 - Choose the desired Bootstrap color theme for the progress bar
+
+# Issues / Pull Requests
+
+You have found an Issue, have a question or you would like to suggest changes regarding this extension? Open an issue in this repo or submit a pull request with the proposed changes. Link: https://github.com/sandewt/mod_readingbar/issues/new
 
 # License
 
