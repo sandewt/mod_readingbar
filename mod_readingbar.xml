@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>Author email</authorEmail>
 	<authorUrl>Auther website</authorUrl>
-	<version>0.0.2-beta</version>
+	<version>0.0.1-beta</version>
 	<description>MOD_READINGBAR_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_readingbar">mod_readingbar.php</filename>
