@@ -8,7 +8,9 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 # Installation
 
-Install and activate the module in the topbar postion.
+Download and install and activate the module in the topbar postion.
+
+Releases: https://github.com/sandewt/mod_readingbar/releases
 
 # License
 
