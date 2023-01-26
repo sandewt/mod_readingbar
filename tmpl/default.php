@@ -15,9 +15,11 @@ $wa = $app->getDocument()->getWebAssetManager()
 	->registerAndUseScript('mod_readingbar', 'mod_readingbar/readingbar.js', [], ['type' => 'module'], ['core'])
 	->registerAndUseStyle('mod_readingbar', 'mod_readingbar/readingbar.css');
 
+$color = htmlspecialchars($params->get('color', 'info'));
+
 ?>
 <div class="mod-readingbar">
 	<div class="progress">
-		<div id="readingbar" class="progress-bar bg-info" role="progressbar"></div>
+		<div id="readingbar" class="progress-bar bg-<?php echo $color; ?>" role="progressbar"></div>
 	</div>
 </div>
