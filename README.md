@@ -13,4 +13,5 @@ Install and activate the module in the topbar postion.
 # License
 
 Copyright (c) 2023 JG Sanders
+
 GNU General Public License version 2 or later (https://www.gnu.org/licenses/gpl-3.0.txt)
