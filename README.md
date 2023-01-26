@@ -12,7 +12,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 - Install and activate the module in the topbar postion.
 
-- Choose the desired bootstrap color theme for the progress bar
+- Choose the desired Bootstrap color theme for the progress bar
 
 # License
 
