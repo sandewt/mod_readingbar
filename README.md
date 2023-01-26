@@ -22,3 +22,11 @@ You have found an Issue, have a question or you would like to suggest changes re
 Copyright (c) 2023 JG Sanders
 
 GNU General Public License version 2 or later ([https://www.gnu.org/licenses/gpl-3.0.txt](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html))
+
+#Special Thanks
+
+Michael Russell - 
+
+#Joomla! Extensions Directory (JED)
+
+This module can also been found in the Joomla! Extensions Directory: NOT YET
