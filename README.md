@@ -19,7 +19,20 @@ This module (partially) uses the Bootstrap progress bar features.
 
 Bootstrap is natively integrated into Joomla.
 
-You can override these properties in the custom.css.
+You can override these properties in the custom.css:
+
+E.g. `height: 4px` becomes `height: 6px`.
+
+```
+.mod-readingbar .progress {
+  height: 6px;
+}
+
+.mod-readingbar .progress-bar {
+  height: 6px;
+}
+```
+
 
 # Issues / Pull Requests
 
