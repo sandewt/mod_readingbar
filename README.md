@@ -19,6 +19,8 @@ This module (partially) uses the Bootstrap progress bar features.
 
 Bootstrap is natively integrated into Joomla.
 
+You can override these properties in the custom.css.
+
 # Issues / Pull Requests
 
 You have found an Issue, have a question or you would like to suggest changes regarding this extension?
