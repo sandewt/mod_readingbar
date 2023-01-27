@@ -19,7 +19,7 @@ This module (partially) uses the Bootstrap progress bar features. Bootstrap is n
 
 You can override some properties in the 'custom.css' template file:
 
-E.g. `height: 4px` becomes `height: 6px`.
+E.g. `height: 4px` (default) becomes `height: 6px`.
 
 ```
 .mod-readingbar .progress {
