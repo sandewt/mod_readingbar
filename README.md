@@ -17,7 +17,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
-You can override these properties in the custom.css:
+You can override these properties in the custom.css template file:
 
 E.g. `height: 4px` becomes `height: 6px`.
 
