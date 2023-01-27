@@ -11,7 +11,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 - Install and activate (or update) the module in the topbar postion.
 
-- Choose the desired Bootstrap color theme for the progress bar.
+- Choose in the settings the desired Bootstrap color theme for the reading bar.
 
 # Note
 
