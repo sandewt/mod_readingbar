@@ -15,9 +15,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 # Note
 
-This module (partially) uses the Bootstrap progress bar features.
-
-Bootstrap is natively integrated into Joomla.
+This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
 You can override these properties in the custom.css:
 
