@@ -10,8 +10,8 @@
   function readingBarScroll() {
     var scrolled = document.documentElement.scrollTop;
     var height   = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (scrolled / height) * 100;
-    document.getElementById("readingbar").style.width = scrolled + "%";
+    var percent  = (scrolled / height) * 100;
+    document.getElementById("readingbar").style.width = percent + "%";
  };
 
 })();
