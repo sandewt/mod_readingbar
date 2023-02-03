@@ -13,7 +13,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 - Choose in the settings the desired Bootstrap color theme for the reading bar.
 
-# Note
+# Styling
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
