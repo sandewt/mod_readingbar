@@ -46,7 +46,7 @@ GNU General Public License version 2 or later ([https://www.gnu.org/licenses/gpl
 
 # Special Thanks
 
-Michael Russell - 
+Michael Russell
 
 # Joomla! Extensions Directory (JED)
 
