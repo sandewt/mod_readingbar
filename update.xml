@@ -7,7 +7,7 @@
 		<type>module</type>
 		<folder></folder>
 		<client>site</client>
-		<version>0.0.1-beta</version>
+		<version>0.0.2-beta</version>
 		<infourl title="Reading Bar">https://github.com/sandewt/mod_readingbar</infourl>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/sandewt/mod_readingbar/archive/master.zip</downloadurl>
