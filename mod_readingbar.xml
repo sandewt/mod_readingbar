@@ -10,6 +10,7 @@
 	<version>1.0.1</version>
 	<description>MOD_READINGBAR_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\ReadingBar</namespace>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<folder module="mod_readingbar">services</folder>
 		<folder>src</folder>
