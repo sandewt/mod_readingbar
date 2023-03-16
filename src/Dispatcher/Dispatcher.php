@@ -20,7 +20,7 @@ use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
 /**
  * Dispatcher class for mod_footer
  *
- * @since  2.0.0
+ * @since  1.1.0
  */
 class Dispatcher extends AbstractModuleDispatcher
 {
@@ -29,7 +29,7 @@ class Dispatcher extends AbstractModuleDispatcher
      *
      * @return  array
      *
-     * @since   2.0.0
+     * @since   1.1.0
      */
     protected function getLayoutData(): array
     {

@@ -6,7 +6,7 @@
  *
  * @author      JG Sanders
  * @copyright   Copyright (C) 2023 JG Sanders. All rights reserved.
- * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later        
+ * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
  */
 
 defined('_JEXEC') or die;
@@ -14,14 +14,26 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Installer\InstallerScript;
 use Joomla\CMS\Filesystem\File;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Log\Log;
 
 /**
  * Script file of ReadingBar module
  *
- * @since  2.0.0
+ * @since  1.1.0
  */
 class mod_readingbarInstallerScript extends InstallerScript
 {
+    /**
+     * Extension script constructor.
+     *
+     * @return  void
+     */
+    public function __construct()
+    {
+        $this->minimumJoomla = '4.3';
+        $this->minimumPhp    = JOOMLA_MINIMUM_PHP;
+    }
+
     /**
      * Method to install the extension
      *
@@ -74,12 +86,23 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function preflight($type, $parent)
     {
-        // echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
-
-        if ($type == 'install')
+        // Check for the minimum PHP version before continuing
+        if (!empty($this->minimumPhp) && version_compare(PHP_VERSION, $this->minimumPhp, '<'))
         {
-            return true;
+            Log::add(Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp), Log::WARNING, 'jerror');
+
+            return false;
         }
+
+        // Check for the minimum Joomla version before continuing
+        if (!empty($this->minimumJoomla) && version_compare(JVERSION, $this->minimumJoomla, '<'))
+        {
+            Log::add(Text::sprintf('JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomla), Log::WARNING, 'jerror');
+
+            return false;
+        }
+
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
 
         return true;
     }
@@ -94,14 +117,14 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function postflight($type, $parent)
     {
-        // echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
-
         $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php';
 
         if (file_exists($old))
         {
             File::delete($old);
         }
+
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
         return true;
     }
