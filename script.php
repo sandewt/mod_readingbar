@@ -18,7 +18,7 @@ use Joomla\CMS\Language\Text;
 /**
  * Script file of ReadingBar module
  *
- * @since  1.0.1
+ * @since  2.0.0
  */
 class mod_readingbarInstallerScript extends InstallerScript
 {

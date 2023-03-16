@@ -19,7 +19,7 @@ use Joomla\DI\ServiceProviderInterface;
 /**
  * The footer module service provider.
  *
- * @since  1.0.1
+ * @since  2.0.0
  */
 return new class () implements ServiceProviderInterface {
     /**
@@ -29,7 +29,7 @@ return new class () implements ServiceProviderInterface {
      *
      * @return  void
      *
-     * @since   1.0.1
+     * @since   2.0.0
      */
     public function register(Container $container): void
     {
