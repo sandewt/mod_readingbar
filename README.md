@@ -14,7 +14,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 - Choose in the settings the desired Bootstrap color theme for the reading bar.
 
 
-### JOOMLA! VERSION ###
+### JOOMLA VERSION ###
 
 * Version: 1.00 only for Joomla 4.2
 * Latest version: 1.1.0 for Joomla 4.3 (under construction)
