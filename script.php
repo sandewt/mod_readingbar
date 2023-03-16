@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Installer\InstallerScript;
 use Joomla\CMS\Filesystem\File;
-// use Joomla\CMS\Language\Text;
+use Joomla\CMS\Language\Text;
 
 /**
  * Script file of ReadingBar module
@@ -30,7 +30,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function install($parent)
     {
-        // echo '<p>' . Text::_('INSTALL_' . $parent . '_TEXT') . '</p>';
+        Text::_('MOD_READINGBAR_INSTALLERSCRIPT_INSTALL');
 
         return true;
     }
@@ -44,7 +44,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function uninstall($parent)
     {
-        // echo '<p>' . Text::_('UNINSTALL_' . $parent . '_TEXT') . '</p>';
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UNINSTALL');
 
         return true;
     }
@@ -58,13 +58,13 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function update($parent)
     {
-        // echo '<p>' . Text::_('UPDATE_' . $parent . '_TEXT') . '</p>';
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UPDATE');
 
         return true;
     }
 
     /**
-     * Function called before extension installation/update/removal procedure commences
+     * Function called before extension installation/update/uninstall procedure commences
      *
      * @param   string            $type    The type of change (install, update or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
@@ -73,7 +73,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function preflight($type, $parent)
     {
-        // echo '<p>' . Text::_('PREFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>'; // test
+        // echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
 
         if ($type == 'install')
         {
@@ -93,7 +93,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function postflight($type, $parent)
     {
-        // echo '<p>' . Text::_('POSTFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>';
+        // echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
         $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php';
 
