@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension version="4.0" type="module" client="site" method="upgrade">
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="4.2" type="module" client="site" method="upgrade">
 	<name>mod_readingbar</name>
 	<author>JG Sanders</author>
-	<creationDate>2023-03-02</creationDate>
+	<creationDate>2023-03-16</creationDate>
 	<copyright>Copyright (C) 2023 JG Sanders. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>Author email</authorEmail>
 	<authorUrl>Auther website</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>MOD_READINGBAR_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\ReadingBar</namespace>
 	<files>
-		<filename module="mod_readingbar">mod_readingbar.php</filename>
+		<folder module="mod_readingbar">services</folder>
+		<folder>src</folder>
 		<folder>language</folder>
 		<folder>tmpl</folder>
 	</files>
