@@ -22,7 +22,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 
 
-### Styling ###
+### STYLING ###
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
