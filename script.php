@@ -13,13 +13,13 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Installer\InstallerScript;
 use Joomla\CMS\Filesystem\File;
-use Joomla\CMS\Language\Text;
+// use Joomla\CMS\Language\Text;
 
 /**
  * Script file of ReadingBar module
  *
  */
-class ReadingBarInstallerScript extends InstallerScript
+class mod_readingbarInstallerScript extends InstallerScript
 {
     /**
      * Method to install the extension
@@ -30,7 +30,7 @@ class ReadingBarInstallerScript extends InstallerScript
      */
     public function install($parent)
     {
-        echo '<p>' . Text::_('INSTALL_' . $parent . '_TEXT') . '</p>';
+        // echo '<p>' . Text::_('INSTALL_' . $parent . '_TEXT') . '</p>';
 
         return true;
     }
@@ -44,7 +44,7 @@ class ReadingBarInstallerScript extends InstallerScript
      */
     public function uninstall($parent)
     {
-        echo '<p>' . Text::_('UNINSTALL_' . $parent . '_TEXT') . '</p>';
+        // echo '<p>' . Text::_('UNINSTALL_' . $parent . '_TEXT') . '</p>';
 
         return true;
     }
@@ -58,7 +58,7 @@ class ReadingBarInstallerScript extends InstallerScript
      */
     public function update($parent)
     {
-        echo '<p>' . Text::_('UPDATE_' . $parent . '_TEXT') . '</p>';
+        // echo '<p>' . Text::_('UPDATE_' . $parent . '_TEXT') . '</p>';
 
         return true;
     }
@@ -73,7 +73,7 @@ class ReadingBarInstallerScript extends InstallerScript
      */
     public function preflight($type, $parent)
     {
-        echo '<p>' . Text::_('PREFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>'; // test
+        // echo '<p>' . Text::_('PREFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>'; // test
 
         if ($type == 'install')
         {
@@ -93,11 +93,11 @@ class ReadingBarInstallerScript extends InstallerScript
      */
     public function postflight($type, $parent)
     {
-        echo '<p>' . Text::_('POSTFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>';
+        // echo '<p>' . Text::_('POSTFLIGHT_' . $type . ' ' . $parent . '_TEXT') . '</p>';
 
         $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php';
 
-        if (!file_exists($file))
+        if (file_exists($old))
         {
             File::delete($old);
         }
