@@ -17,7 +17,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 ### JOOMLA! VERSION ###
 
 * Version: 1.00 only for Joomla 4.2
-* Latest version: 2.00 for Joomla 4.3 (under construction)
+* Latest version: 1.1.0 for Joomla 4.3 (under construction)
 * Type: module (site)
 
 
