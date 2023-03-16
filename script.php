@@ -86,6 +86,8 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function preflight($type, $parent)
     {
+         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
+
         // Check for the minimum PHP version before continuing
         if (!empty($this->minimumPhp) && version_compare(PHP_VERSION, $this->minimumPhp, '<'))
         {
@@ -102,8 +104,6 @@ class mod_readingbarInstallerScript extends InstallerScript
             return false;
         }
 
-        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
-
         return true;
     }
 
@@ -117,14 +117,14 @@ class mod_readingbarInstallerScript extends InstallerScript
      */
     public function postflight($type, $parent)
     {
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
+
         $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php';
 
         if (file_exists($old))
         {
             File::delete($old);
         }
-
-        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
         return true;
     }
