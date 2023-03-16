@@ -21,7 +21,8 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 * Type: module (site)
 
 
-# Styling
+
+### Styling ###
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
