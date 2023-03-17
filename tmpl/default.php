@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package     Reading Bar
  * @subpackage  mod_readingbar
