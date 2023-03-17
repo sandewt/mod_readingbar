@@ -119,7 +119,7 @@ class mod_readingbarInstallerScript extends InstallerScript
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
-        $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php'; // File needed here in old joomla structure
+        $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php'; // File needed here in old Joomla structure
 
         if (file_exists($old))
         {
