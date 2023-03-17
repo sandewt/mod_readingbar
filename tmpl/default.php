@@ -11,12 +11,16 @@
 
 defined('_JEXEC') or die;
 
+if (!$color) {
+    return;
+}
+
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $app->getDocument()->getWebAssetManager()
     ->registerAndUseScript('mod_readingbar', 'mod_readingbar/readingbar.js', [], ['type' => 'module'], ['core'])
     ->registerAndUseStyle('mod_readingbar', 'mod_readingbar/readingbar.css');
 
-$color = htmlspecialchars($params->get('color', 'info'));
+$color = htmlspecialchars($params->get('color', 'info', ENT_COMPAT, 'UTF-8'));
 
 ?>
 <div class="mod-readingbar">
