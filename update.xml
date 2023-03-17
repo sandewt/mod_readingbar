@@ -2,7 +2,7 @@
 <updates>
 	<update>
 		<name>Reading Bar</name>
-		<description>Reading Bar Module</description>
+		<description> Module Reading Bar</description>
 		<element>mod_readingbar</element>
 		<type>module</type>
 		<folder></folder>
