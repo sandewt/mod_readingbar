@@ -11,10 +11,6 @@
 
 defined('_JEXEC') or die;
 
-if (!$color) {
-    return;
-}
-
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $app->getDocument()->getWebAssetManager()
     ->registerAndUseScript('mod_readingbar', 'mod_readingbar/readingbar.js', [], ['type' => 'module'], ['core'])
