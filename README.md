@@ -1,4 +1,4 @@
-# Reading Bar module for Joomla
+# Reading Bar module for Joomla 4.3
 
 This module creates a reading progress bar at the topbar module position in your Joomla website.
 
