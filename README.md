@@ -16,7 +16,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 ### JOOMLA VERSION ###
 
-* Latest version: 1.0.2 for Joomla 4.2
+* Latest version: 1.0.3 for Joomla 4.2
 * Type: module (site)
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
