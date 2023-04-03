@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="4.0" type="module" client="site" method="upgrade">
-	<name>Rading Bar</name>
+	<name>Reading Bar</name>
 	<author>JG Sanders</author>
 	<creationDate>2023-04</creationDate>
 	<copyright>Copyright (C) 2023 JG Sanders. All rights reserved.</copyright>
