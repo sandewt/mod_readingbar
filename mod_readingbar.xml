@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension version="4.3" type="module" client="site" method="upgrade">
-	<name>mod_readingbar</name>
+	<name>Reading Bar</name>
 	<author>JG Sanders</author>
-	<creationDate>2023-03</creationDate>
+	<creationDate>2023-04</creationDate>
 	<copyright>Copyright (C) 2023 JG Sanders. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>Author email</authorEmail>
