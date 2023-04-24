@@ -6,8 +6,7 @@
  *
  * @author      JG Sanders
  * @copyright   Copyright (C) 2023 JG Sanders. All rights reserved.
- * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public
- *              License Version 2 or Later
+ * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
  */
 
 defined('_JEXEC') or die;
@@ -79,8 +78,7 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called before extension installation/update/uninstall procedure
-     * commences
+     * Function called before extension installation/update/uninstall procedure commences
      *
      * @param   string            $type    The type of change (install, update
      *                                     or discover_install, not uninstall)
@@ -131,8 +129,7 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called after extension installation/update/removal procedure
-     * commences
+     * Function called after extension installation/update/removal procedure commences
      *
      * @param   string            $type    The type of change (install, update
      *                                     or discover_install, not uninstall)
