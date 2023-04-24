@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension version="4.3" type="module" client="site" method="upgrade">
-	<name>Reading Bar</name>
+	<name>mod_readingbar</name>
 	<author>JG Sanders</author>
-	<creationDate>2023-04</creationDate>
+	<creationDate>2023-03</creationDate>
 	<copyright>Copyright (C) 2023 JG Sanders. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>Author email</authorEmail>
 	<authorUrl>Auther website</authorUrl>
-	<version>1.1.1</version>
+	<version>1.1.0</version>
 	<description>MOD_READINGBAR_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\ReadingBar</namespace>
 	<scriptfile>script.php</scriptfile>
