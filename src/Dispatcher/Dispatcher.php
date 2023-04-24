@@ -13,12 +13,10 @@ namespace Joomla\Module\ReadingBar\Site\Dispatcher;
 
 use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
 
-// phpcs:disable PSR1.Files.SideEffects
-\defined('_JEXEC') or die;
-// phpcs:enable PSR1.Files.SideEffects
+defined('_JEXEC') or die;
 
 /**
- * Dispatcher class for mod_footer
+ * Dispatcher class for mod_readingbar
  *
  * @since  1.1.0
  */
