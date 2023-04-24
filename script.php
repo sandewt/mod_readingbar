@@ -6,8 +6,7 @@
  *
  * @author      JG Sanders
  * @copyright   Copyright (C) 2023 JG Sanders. All rights reserved.
- * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public
- *              License Version 2 or Later
+ * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
  */
 
 defined('_JEXEC') or die;
@@ -43,7 +42,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function install($parent)
+    public function install($parent): bool
     {
         Text::_('MOD_READINGBAR_INSTALLERSCRIPT_INSTALL');
 
@@ -57,7 +56,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function uninstall($parent)
+    public function uninstall($parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UNINSTALL');
 
@@ -71,7 +70,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function update($parent)
+    public function update($parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UPDATE');
 
@@ -79,8 +78,7 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called before extension installation/update/uninstall procedure
-     * commences
+     * Function called before extension installation/update/uninstall procedure commences
      *
      * @param   string            $type    The type of change (install, update
      *                                     or discover_install, not uninstall)
@@ -88,7 +86,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function preflight($type, $parent)
+    public function preflight($type, $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
 
@@ -131,8 +129,7 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called after extension installation/update/removal procedure
-     * commences
+     * Function called after extension installation/update/removal procedure commences
      *
      * @param   string            $type    The type of change (install, update
      *                                     or discover_install, not uninstall)
@@ -140,7 +137,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function postflight($type, $parent)
+    public function postflight($type, $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
