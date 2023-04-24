@@ -1,4 +1,4 @@
-# Reading Bar module for Joomla 4.3
+# Reading Bar module for Joomla 4.2
 
 This module creates a reading progress bar at the topbar module position in your Joomla website.
 
@@ -16,12 +16,8 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 ### JOOMLA VERSION ###
 
-* Latest version: 1.1.1 for Joomla 4.3
+* Latest version: 1.0.3 for Joomla 4.2
 * Type: module (site)
-
-
-
-### STYLING ###
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
