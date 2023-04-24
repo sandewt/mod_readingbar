@@ -42,7 +42,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function install($parent)
+    public function install($parent): bool
     {
         Text::_('MOD_READINGBAR_INSTALLERSCRIPT_INSTALL');
 
@@ -56,7 +56,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function uninstall($parent)
+    public function uninstall($parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UNINSTALL');
 
@@ -70,7 +70,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function update($parent)
+    public function update($parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UPDATE');
 
@@ -86,7 +86,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function preflight($type, $parent)
+    public function preflight($type, $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
 
@@ -137,7 +137,7 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @return  boolean  True on success
      */
-    public function postflight($type, $parent)
+    public function postflight($type, $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
