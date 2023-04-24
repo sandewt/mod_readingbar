@@ -6,7 +6,8 @@
  *
  * @author      JG Sanders
  * @copyright   Copyright (C) 2023 JG Sanders. All rights reserved.
- * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
+ * @license     http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public
+ *              License Version 2 or Later
  */
 
 defined('_JEXEC') or die;
@@ -23,6 +24,7 @@ use Joomla\CMS\Log\Log;
  */
 class mod_readingbarInstallerScript extends InstallerScript
 {
+
     /**
      * Extension script constructor.
      *
@@ -77,29 +79,50 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called before extension installation/update/uninstall procedure commences
+     * Function called before extension installation/update/uninstall procedure
+     * commences
      *
-     * @param   string            $type    The type of change (install, update or discover_install, not uninstall)
+     * @param   string            $type    The type of change (install, update
+     *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  boolean  True on success
      */
     public function preflight($type, $parent)
     {
-         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
 
         // Check for the minimum PHP version before continuing
-        if (!empty($this->minimumPhp) && version_compare(PHP_VERSION, $this->minimumPhp, '<'))
-        {
-            Log::add(Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp), Log::WARNING, 'jerror');
+        if (!empty($this->minimumPhp)
+            && version_compare(
+                PHP_VERSION,
+                $this->minimumPhp,
+                '<'
+            )) {
+            Log::add(
+                Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
+                Log::WARNING,
+                'jerror'
+            );
 
             return false;
         }
 
         // Check for the minimum Joomla version before continuing
-        if (!empty($this->minimumJoomla) && version_compare(JVERSION, $this->minimumJoomla, '<'))
-        {
-            Log::add(Text::sprintf('JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomla), Log::WARNING, 'jerror');
+        if (!empty($this->minimumJoomla)
+            && version_compare(
+                JVERSION,
+                $this->minimumJoomla,
+                '<'
+            )) {
+            Log::add(
+                Text::sprintf(
+                    'JLIB_INSTALLER_MINIMUM_JOOMLA',
+                    $this->minimumJoomla
+                ),
+                Log::WARNING,
+                'jerror'
+            );
 
             return false;
         }
@@ -108,9 +131,11 @@ class mod_readingbarInstallerScript extends InstallerScript
     }
 
     /**
-     * Function called after extension installation/update/removal procedure commences
+     * Function called after extension installation/update/removal procedure
+     * commences
      *
-     * @param   string            $type    The type of change (install, update or discover_install, not uninstall)
+     * @param   string            $type    The type of change (install, update
+     *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  boolean  True on success
@@ -119,13 +144,14 @@ class mod_readingbarInstallerScript extends InstallerScript
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
-        $old = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php';
+        $old = JPATH_ROOT
+            . '/modules/mod_readingbar/mod_readingbar.php'; // File needed in Joomla 4.2
 
-        if (file_exists($old))
-        {
-            File::delete($old);
+        if (file_exists($old)) {
+            File::delete($old); // Delete file
         }
 
         return true;
     }
+
 }
