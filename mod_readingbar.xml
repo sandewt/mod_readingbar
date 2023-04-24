@@ -12,9 +12,9 @@
 	<namespace path="src">Joomla\Module\ReadingBar</namespace>
 	<scriptfile>script.php</scriptfile>
 	<files>
+		<folder>language</folder>
 		<folder module="mod_readingbar">services</folder>
 		<folder>src</folder>
-		<folder>language</folder>
 		<folder>tmpl</folder>
 	</files>
 	<media folder="media" destination="mod_readingbar">
