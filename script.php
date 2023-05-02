@@ -19,7 +19,7 @@ use Joomla\CMS\Log\Log;
 /**
  * Script file of ReadingBar module
  *
- * @since  1.1.0
+ * @since  1.0.0
  */
 class mod_readingbarInstallerScript extends InstallerScript
 {
