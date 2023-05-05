@@ -7,6 +7,8 @@ Based on an article in Joomla! Community Magazine™: How to create a reading ba
 Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-bar-in-your-joomla-website-without-extensions
 
 # Configuration / Features
+
+### INSTALLATION ###
 - Download: https://github.com/sandewt/mod_readingbar/releases
 
 - Install and activate (or update) the module in the topbar postion.
