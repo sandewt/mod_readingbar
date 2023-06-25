@@ -13,7 +13,7 @@ namespace Joomla\Module\ReadingBar\Site\Dispatcher;
 
 use Joomla\CMS\Dispatcher\AbstractModuleDispatcher;
 
-defined('_JEXEC') or die;
+\defined('_JEXEC') or die;
 
 /**
  * Dispatcher class for mod_readingbar

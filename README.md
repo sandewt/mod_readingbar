@@ -7,6 +7,8 @@ Based on an article in Joomla! Community Magazine™: How to create a reading ba
 Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-bar-in-your-joomla-website-without-extensions
 
 # Configuration / Features
+
+### INSTALLATION ###
 - Download: https://github.com/sandewt/mod_readingbar/releases
 
 - Install and activate (or update) the module in the topbar postion.
@@ -16,7 +18,7 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 ### JOOMLA VERSION ###
 
-* Latest version: 1.1.2 for Joomla 4.3
+* Latest version: 1.1.3 for Joomla 4.3
 * Type: module (site)
 
 
@@ -25,9 +27,9 @@ Link: https://magazine.joomla.org/all-issues/october-2022/a-progressive-reading-
 
 This module (partially) uses the Bootstrap progress bar features. Bootstrap is natively integrated into Joomla.
 
-You can override some properties in the 'user.css' custom template file:
+You can override some properties in the 'user.css' custom template file.
 
-E.g. `height: 4px` (default) becomes `height: 6px`.
+E.g. `height: 4px` (default) becomes `height: 6px`:
 
 ```
 .mod-readingbar .progress {
