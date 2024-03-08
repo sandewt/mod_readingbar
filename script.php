@@ -107,11 +107,7 @@ class Mod_readingbarInstallerScript
         if ($type !== 'uninstall'){
             // Check for the minimum PHP version before continuing
             if (!empty($this->minimumPhp)
-                && version_compare(
-                    PHP_VERSION,
-                    $this->minimumPhp,
-                    '<'
-                )) {
+                && version_compare(PHP_VERSION, $this->minimumPhp, '<')) {
                 Log::add(
                     Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
                     Log::WARNING,
@@ -123,11 +119,7 @@ class Mod_readingbarInstallerScript
 
             // Check for the minimum Joomla version before continuing
             if (!empty($this->minimumJoomla)
-                && version_compare(
-                    JVERSION,
-                    $this->minimumJoomla,
-                    '<'
-                )) {
+                && version_compare(JVERSION, $this->minimumJoomla, '<')) {
                 Log::add(
                     Text::sprintf(
                         'JLIB_INSTALLER_MINIMUM_JOOMLA',
