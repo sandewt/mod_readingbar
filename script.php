@@ -104,7 +104,7 @@ class Mod_readingbarInstallerScript
      */
     public function preflight(string $type, InstallerAdapter $parent): bool
     {
-        if ($type!== 'uninstall'){
+        if ($type !== 'uninstall'){
             // Check for the minimum PHP version before continuing
             if (!empty($this->minimumPhp)
                 && version_compare(
