@@ -27,7 +27,7 @@ class Mod_readingbarInstallerScript
      * Minimum Joomla version
      *
      * @var    string
-     * @since  1.0.0
+     * @since  1.1.0
      */
     private string $minimumJoomla = '4.3';
 
@@ -35,7 +35,7 @@ class Mod_readingbarInstallerScript
      * Minimum PHP version
      *
      * @var    string
-     * @since  1.0.0
+     * @since  1.1.0
      */    
     private string $minimumPhp = JOOMLA_MINIMUM_PHP;
 
@@ -43,7 +43,7 @@ class Mod_readingbarInstallerScript
      * File to delete
      *
      * @var    string
-     * @since  1.0.0
+     * @since  1.1.0
      */    
     private string $deletedFile;
 
@@ -53,7 +53,7 @@ class Mod_readingbarInstallerScript
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  bool                       True on success
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function install(InstallerAdapter $parent): bool
     {
@@ -68,7 +68,7 @@ class Mod_readingbarInstallerScript
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  bool                       True on success
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function uninstall(InstallerAdapter $parent): bool
     {
@@ -83,7 +83,7 @@ class Mod_readingbarInstallerScript
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  bool                       True on success
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function update(InstallerAdapter $parent): bool
     {
@@ -100,7 +100,7 @@ class Mod_readingbarInstallerScript
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  bool                       True on success
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function preflight(string $type, InstallerAdapter $parent): bool
     {
@@ -154,7 +154,7 @@ class Mod_readingbarInstallerScript
      * @param   InstallerAdapter  $parent  The class calling this method
      *
      * @return  bool                       True on success
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function postflight(string $type, InstallerAdapter $parent): bool
     {
