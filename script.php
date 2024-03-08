@@ -123,8 +123,7 @@ class Mod_readingbarInstallerScript
                 && version_compare(JVERSION, $this->minimumJoomla, '<')) {
                 Log::add(
                     Text::sprintf(
-                        'JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomla
-                    ),
+                        'JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomla),
                     Log::WARNING,
                     'jerror'
                 );
