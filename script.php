@@ -109,7 +109,8 @@ class Mod_readingbarInstallerScript
             if (!empty($this->minimumPhp)
                 && version_compare(PHP_VERSION, $this->minimumPhp, '<')) {
                 Log::add(
-                    Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
+                    Text::sprintf(
+                        'JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
                     Log::WARNING,
                     'jerror'
                 );
