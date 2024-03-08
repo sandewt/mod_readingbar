@@ -168,5 +168,4 @@ class Mod_readingbarInstallerScript
 
         return true;
     }
-
 }
