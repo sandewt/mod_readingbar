@@ -11,13 +11,13 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Installer\InstallerAdapter;
 use Joomla\CMS\Filesystem\File;
+use Joomla\CMS\Installer\InstallerAdapter;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Log\Log;
 
 /**
- * Script file of ReadingBar module
+ * Script installer file of the ReadingBar module
  *
  * @since  1.1.0
  */
