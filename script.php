@@ -52,7 +52,7 @@ class Mod_readingbarInstallerScript
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  bool                       True on success
+     * @return  bool   True on success
      * @since   1.1.0
      */
     public function install(InstallerAdapter $parent): bool
@@ -67,7 +67,7 @@ class Mod_readingbarInstallerScript
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  bool                       True on success
+     * @return  bool   True on success
      * @since   1.1.0
      */
     public function uninstall(InstallerAdapter $parent): bool
@@ -82,7 +82,7 @@ class Mod_readingbarInstallerScript
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  bool                       True on success
+     * @return  bool   True on success
      * @since   1.1.0
      */
     public function update(InstallerAdapter $parent): bool
@@ -99,7 +99,7 @@ class Mod_readingbarInstallerScript
      *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  bool                       True on success
+     * @return  bool   True on success
      * @since   1.1.0
      */
     public function preflight(string $type, InstallerAdapter $parent): bool
@@ -153,7 +153,7 @@ class Mod_readingbarInstallerScript
      *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  bool                       True on success
+     * @return  bool   True on success
      * @since   1.1.0
      */
     public function postflight(string $type, InstallerAdapter $parent): bool
