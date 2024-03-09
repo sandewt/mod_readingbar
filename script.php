@@ -45,7 +45,7 @@ class Mod_readingbarInstallerScript
      * @var    string
      * @since  1.1.0
      */    
-    private string $deletedFile;
+    private string $deleteFile;
 
     /**
      * Method to install the extension
@@ -149,10 +149,10 @@ class Mod_readingbarInstallerScript
      */
     public function postflight(string $type, InstallerAdapter $parent): bool
     {
-        $this->deletedFile = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php'; // File needed in Joomla 4.2
+        $this->deleteFile = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php'; // File needed in Joomla 4.2
 
-        if (file_exists($this->deletedFile)) {
-            File::delete($this->deletedFile);
+        if (file_exists($this->deleteFile)) {
+            File::delete($this->deleteFile);
         }
 
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
