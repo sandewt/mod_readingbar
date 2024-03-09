@@ -11,38 +11,51 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Installer\InstallerScript;
-use Joomla\CMS\Filesystem\File;
+use Joomla\CMS\Installer\InstallerAdapter;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Log\Log;
+use Joomla\Filesystem\File;
 
 /**
- * Script file of ReadingBar module
+ * Script installer file of the ReadingBar module
  *
  * @since  1.1.0
  */
-class mod_readingbarInstallerScript extends InstallerScript
+class Mod_readingbarInstallerScript
 {
+    /**
+     * Minimum Joomla version
+     *
+     * @var    string
+     * @since  1.1.0
+     */
+    private string $minimumJoomla = '4.3';
 
     /**
-     * Extension script constructor.
+     * Minimum PHP version
      *
-     * @return  void
-     */
-    public function __construct()
-    {
-        $this->minimumJoomla = '4.3';
-        $this->minimumPhp    = JOOMLA_MINIMUM_PHP;
-    }
+     * @var    string
+     * @since  1.1.0
+     */    
+    private string $minimumPhp = JOOMLA_MINIMUM_PHP;
+
+    /**
+     * File to delete
+     *
+     * @var    string
+     * @since  1.1.0
+     */    
+    private string $deletedFile;
 
     /**
      * Method to install the extension
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool   True on success
+     * @since   1.1.0
      */
-    public function install($parent): bool
+    public function install(InstallerAdapter $parent): bool
     {
         Text::_('MOD_READINGBAR_INSTALLERSCRIPT_INSTALL');
 
@@ -54,9 +67,10 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool   True on success
+     * @since   1.1.0
      */
-    public function uninstall($parent): bool
+    public function uninstall(InstallerAdapter $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UNINSTALL');
 
@@ -68,9 +82,10 @@ class mod_readingbarInstallerScript extends InstallerScript
      *
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool   True on success
+     * @since   1.1.0
      */
-    public function update($parent): bool
+    public function update(InstallerAdapter $parent): bool
     {
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_UPDATE');
 
@@ -84,46 +99,40 @@ class mod_readingbarInstallerScript extends InstallerScript
      *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool   True on success
+     * @since   1.1.0
      */
-    public function preflight($type, $parent): bool
+    public function preflight(string $type, InstallerAdapter $parent): bool
     {
+        if ($type !== 'uninstall'){
+            // Check for the minimum PHP version before continuing
+            if (!empty($this->minimumPhp)
+                && version_compare(PHP_VERSION, $this->minimumPhp, '<')) {
+                Log::add(
+                    Text::sprintf(
+                        'JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
+                    Log::WARNING,
+                    'jerror'
+                );
+
+                return false;
+            }
+
+            // Check for the minimum Joomla version before continuing
+            if (!empty($this->minimumJoomla)
+                && version_compare(JVERSION, $this->minimumJoomla, '<')) {
+                Log::add(
+                    Text::sprintf(
+                        'JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomla),
+                    Log::WARNING,
+                    'jerror'
+                );
+
+                return false;
+            }
+        }
+
         echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_PREFLIGHT');
-
-        // Check for the minimum PHP version before continuing
-        if (!empty($this->minimumPhp)
-            && version_compare(
-                PHP_VERSION,
-                $this->minimumPhp,
-                '<'
-            )) {
-            Log::add(
-                Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPhp),
-                Log::WARNING,
-                'jerror'
-            );
-
-            return false;
-        }
-
-        // Check for the minimum Joomla version before continuing
-        if (!empty($this->minimumJoomla)
-            && version_compare(
-                JVERSION,
-                $this->minimumJoomla,
-                '<'
-            )) {
-            Log::add(
-                Text::sprintf(
-                    'JLIB_INSTALLER_MINIMUM_JOOMLA',
-                    $this->minimumJoomla
-                ),
-                Log::WARNING,
-                'jerror'
-            );
-
-            return false;
-        }
 
         return true;
     }
@@ -135,20 +144,19 @@ class mod_readingbarInstallerScript extends InstallerScript
      *                                     or discover_install, not uninstall)
      * @param   InstallerAdapter  $parent  The class calling this method
      *
-     * @return  boolean  True on success
+     * @return  bool   True on success
+     * @since   1.1.0
      */
-    public function postflight($type, $parent): bool
+    public function postflight(string $type, InstallerAdapter $parent): bool
     {
-        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
+        $this->deletedFile = JPATH_ROOT . '/modules/mod_readingbar/mod_readingbar.php'; // File needed in Joomla 4.2
 
-        $old = JPATH_ROOT
-            . '/modules/mod_readingbar/mod_readingbar.php'; // File needed in Joomla 4.2
-
-        if (file_exists($old)) {
-            File::delete($old); // Delete file
+        if (file_exists($this->deletedFile)) {
+            File::delete($this->deletedFile);
         }
+
+        echo Text::_('MOD_READINGBAR_INSTALLERSCRIPT_POSTFLIGHT');
 
         return true;
     }
-
 }
