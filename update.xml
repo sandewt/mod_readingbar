@@ -12,6 +12,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/sandewt/mod_readingbar/archive/master.zip</downloadurl>
 		</downloads>
+		<sha256></sha256>
 		<tags>
 			<tag>stable</tag>
 		</tags>
